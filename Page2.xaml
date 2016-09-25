@@ -1,0 +1,54 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PhoneApp2.Page2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontFamily="Verdana" Foreground="White" Height="78">
+        		<Run Text=" "/>
+        		<Run FontFamily="Segoe WP" Text="instructions"/>
+            </TextBlock>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Margin="10,124,14,10" Grid.RowSpan="2">
+
+            <TextBlock HorizontalAlignment="Left" Margin="45,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="87" Width="616" FontFamily="Comic Sans MS" FontSize="22" Foreground="#FFF9F9F7">
+        		<Run Text="Private Ryan is a war soldier who is separated from his battalion and trapped in a marsh. Marshes, as we know, are notorious for the empire of mosquitoes that reside there. "/>
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="45,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="164" Width="616" Foreground="#FFF9F9F9" FontFamily="Comic Sans MS" FontSize="24">
+            	<Run Text="We want Private Ryan to live and survive the mosquitoes."/>
+            	<Run Text=" In real life it may be a cumbersome task, but don't worry, here you just have to tap the mosquito to kill it. If the  number of mosquitoe bite reaches 10 Private Ryan dies."/>
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="45,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="65" Width="616" FontFamily="Comic Sans MS" FontSize="24" Foreground="#FFF9F9F9">
+            	<Run Text="Live upto your expectations  and  do your best in serving your "/>
+            	<Run Text="nation"/>
+            	<Run Text="."/>
+            </TextBlock>
+
+        </Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/bg.jpg"
+                    Stretch="UniformToFill" />
+        </Grid.Background>
+    </Grid>
+
+</phone:PhoneApplicationPage>
